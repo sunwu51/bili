@@ -1,6 +1,6 @@
 
 const MongoClient = require('mongodb').MongoClient;
-const uri = "mongodb+srv://frank:qwer123456@cluster0.fmzys.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority";
+const uri = "mongodb+srv://<username>:<yourpasswd>@cluster0.fmzys.gcp.mongodb.net/<dbname>?retryWrites=true&w=majority";
 
 async function getAllCmdName(){
     const client = new MongoClient(uri, { useNewUrlParser: true });
